@@ -86,7 +86,7 @@ What we need to do now is link the canonical repository to your local copy. This
 
 You have now set up your new project for collaborative development! We are ready to start making changes. Close this issue and move on to the next one.
 
-/details>
+</details>
 
 <hr>
 
@@ -110,7 +110,7 @@ We will be using the `dryville_story.md` file to illustrate changes to a reposit
 
 You have now made a commit and recorded your changes with Git! Close this issue and move on to the next one.
 
-/details>
+</details>
 
 <hr>
 
@@ -132,7 +132,7 @@ Practice makes perfect - let's make a second commit to our local repo.
 You have now made two commits and recorded your changes with Git! Close this issue and move on to the next one.
 
 
-/details>
+</details>
 
 <hr>
 
@@ -154,7 +154,7 @@ At this point, we have made our file changes and are satisfied with the state of
 You have pushed your changes up to GitHub! Close this issue and move on to the next one.
 
 
-/details>
+</details>
 
 <hr>
 
@@ -181,7 +181,7 @@ For now, we will discuss how to open a pull request.
 You have now successfully created a PR! Wait for your PR to be reviewed and merged. Once your PR has been merged, close this issue and move on to the next one.
 
 
-/details>
+</details>
 
 <hr>
 
@@ -204,7 +204,7 @@ Merging a PR creates a commit on the canonical repository. Even though the most 
 You have successfully closed the loop after your PR was merged! Close this issue and move to the next one.
 
 
-/details>
+</details>
 
 <hr>
 
@@ -226,7 +226,7 @@ Scenario: After your content was merged, a collaborator tells you that they adde
 Great! You successfully pulled down contributions that someone else on your team made to the repository. Next, we will add another section. Close this issue and move to the next one.
 
 
-/details>
+</details>
 
 <hr>
 
@@ -252,7 +252,7 @@ Time to add on to this story. We've done this a couple times now, so the edit-sa
 You have now made two new commits. Close this issue and move on to the next one.
 
 
-/details>
+</details>
 
 <hr>
 
@@ -272,7 +272,7 @@ In the last issue, we made two commits that added two new sections of the story 
 Your first merge conflict! Everything will be OK, promise :) Close this issue and move on to the next one.
 
 
-/details>
+</details>
 
 <hr>
 
@@ -318,7 +318,7 @@ You start thinking... a reservoir (you can call it a lake) above town could real
 You successfully resolved a conflict! Close this issue and move on to the next one.
 
 
-/details>
+</details>
 
 <hr>
 
