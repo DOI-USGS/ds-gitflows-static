@@ -27,7 +27,7 @@ The first step in our workflow when working on a new project is to fork the cano
 ----
 **Action:** Fork this repo!
 
-1. Open the main repository page, `https://github.com/USGS-R/ds-gitflows-static-[username]`.
+1. Open the main repository page, `https://github.com/padilla410/ds-gitflows-static-[username]`.
 2. Click the "Fork" button at the top right (see image below).
 
 ![image](https://user-images.githubusercontent.com/13220910/81218905-94147a80-8fa4-11ea-9685-09ae5b335bdf.png)
@@ -50,7 +50,7 @@ The next step in our workflow is to clone your fork. This creates a local copy o
 **Action:** Clone this repo!
 
 1. Open the GitHub page for your fork, e.g. `https://github.com/[username]/ds-gitflows-static-[username]`. *A navigation note*: from your fork, you can easily navigate back to the canonical repository by clicking the link next to "forked from" at the top, just below your forked repository name. From the canonical repo page, you can get back to your fork by clicking the fork button on the canonical repo and choosing your existing fork from the list.
-2. Click the `Clone or download` button. Again, make sure you are ***on your fork***. This means that you see `[username]/ds-gitflows-static-[username]` at the top of the page with `forked from USGS-R/ds-gitflows-static-[username]` underneath.
+2. Click the `Clone or download` button. Again, make sure you are ***on your fork***. This means that you see `[username]/ds-gitflows-static-[username]` at the top of the page with `forked from padilla410/ds-gitflows-static-[username]` underneath.
 3. Copy the SSH address, not the HTTPS one (see image below). We should have already set up your SSH keys, but if not, follow [these instructions to generate an SSH key](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and [these instructions to add the SSH key to your GitHub account](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account). When you come back to the page, you should have the SSH option.
 
 ![image](https://user-images.githubusercontent.com/13220910/81214134-01241200-8f9d-11ea-9acc-994e0ccf368f.png)
@@ -76,11 +76,11 @@ What we need to do now is link the canonical repository to your local copy. This
 ----
 **Action:** Link your cloned repository to the upstream remote.
 
-1. Open the GitHub page for the main (or canonical) repository, `https://github.com/USGS-R/ds-gitflows-[username]`
+1. Open the GitHub page for the main (or canonical) repository, `https://github.com/padilla410/ds-gitflows-static-[username]`
 2. Just like in the previous step, click `Clone or download`
 3. Copy the SSH URL (not the HTTPS URL)
 4. Open Git Bash to your project's working directory.  
-5. Type `git remote add upstream [insert URL]`, e.g. `git remote add upstream https://github.com/USGS-R/ds-gitflows-[username]`. *Reminder:* you cannot CTRL+V to paste into Git Bash. Right click and choose paste instead.
+5. Type `git remote add upstream [insert URL]`, e.g. `git remote add upstream https://github.com/padilla410/ds-gitflows-static-[username]`. *Reminder:* you cannot CTRL+V to paste into Git Bash. Right click and choose paste instead.
 6. Hit enter.
 7. Now, when you run `git remote -v` you should see a list with both an `upstream` remote and an `origin` remote.
 
@@ -101,7 +101,7 @@ We will be using the `dryville_story.md` file to illustrate changes to a reposit
 **Action:** Add text to the story and commit your change.
 
 1. Before we make any changes, let's check that we are starting from a clean slate. Run `git status` in Git Bash in your project directory. You should see a message that says "nothing to commit". This means that there are no changes on your local copy and it exactly matches the content on your remote fork (the `origin` repo). This is good!
-1. Now, open the `dryville_story.md` file on your computer. Any text editor will do, such as [Notepad++](https://notepad-plus-plus.org/downloads/). Currently, there is a title (denoted by `#`) and two sub-headers (denoted by `##`) with text. You can also see the syntax for hyperlinks, `[text that appears](link/to/the/website)`. To see how this syntax is rendered on GitHub, open the `dryville_story.md` file on GitHub by going to the main repo (`https://github.com/USGS-R/ds-gitflows-[username]`) and clicking the file name.
+1. Now, open the `dryville_story.md` file on your computer. Any text editor will do, such as [Notepad++](https://notepad-plus-plus.org/downloads/). Currently, there is a title (denoted by `#`) and two sub-headers (denoted by `##`) with text. You can also see the syntax for hyperlinks, `[text that appears](link/to/the/website)`. To see how this syntax is rendered on GitHub, open the `dryville_story.md` file on GitHub by going to the main repo (`https://github.com/padilla410/ds-gitflows-static-[username]`) and clicking the file name.
 1. Now, we will add the next section of the story (we are recreating the story available [here on the USGS Water Science School](https://www.usgs.gov/special-topic/water-science-school/science/story-water-dryville)). Open that link. The next section in the story that we don't have in our file yet is called "Getting Water to Your Homes". Add the title (use `##`), the body text, and the appropriate link for the words "over 8 pounds a gallon" to the `dryville_story.md` file locally. Save the file.
 1. Now, we have made a change in our local repo. If you run `git status` in Git Bash, you should see the words "modified: dryville_story.md". This means that Git detects a new change. At this point, you could run `git diff` to visually see the changes you made: red = original, green = changed (if you do this and see a `:` at the bottom of your bash window, type `q` to get out of the diff view before proceeding). You will also see the words "no changes added to commit". This is because we have not told Git to record these changes; we have not "staged" them. 
 1. We now need to stage these changes so that they can be included in our commit. To stage our changes, run `git add dryville_story.md`. Now when you run `git status`, you see that the "modified: dryville_story.md" change is listed under "Changes to be committed". We are now ready to make a commit.
@@ -172,7 +172,7 @@ For now, we will discuss how to open a pull request.
 
 ![image](https://user-images.githubusercontent.com/13220910/81233801-17da6100-8fbd-11ea-9a84-07c9a9a3e705.png)
 
-2. Before your pull request is actually created, you should verify that you are requesting the correct changes be merged with the correct repository. For now, we are not working with branches, so don't worry about the fields that say "master". However, you should verify that the `base repository` is set to the project canonical repo (`USGS-R/ds-gitflows-[username]` in this case) and that the `head repository` is set to your fork (`[username]/ds-gitflows-[username]`). You also need to verify the commits lists. It should list the two that you just created.
+2. Before your pull request is actually created, you should verify that you are requesting the correct changes be merged with the correct repository. For now, we are not working with branches, so don't worry about the fields that say "master". However, you should verify that the `base repository` is set to the project canonical repo (`padilla410/ds-gitflows-static-[username]` in this case) and that the `head repository` is set to your fork (`[username]/ds-gitflows-[username]`). You also need to verify the commits lists. It should list the two that you just created.
 3. When you have checked those things, you can click the green "Create pull request" button.
 4. You still haven't made the pull request yet - one more step. You now need to title your pull request and add a description about your changes. I believe this was discussed earlier but if you need a refresher, [here is an article about some common best practices when it comes to PRs](https://www.atlassian.com/blog/git/written-unwritten-guide-pull-requests). In your description, make sure to reference this issue by typing `#[issue number]`. 
 5. Once you add a title and description, click the cog next to the `Reviewers` feature on the right bar and select @lindsayplatt as the reviewer from the drop-down menu. If you do not have the option to add a reviewer, do step 6 and then add the reviewer after.
@@ -217,7 +217,7 @@ Scenario: After your content was merged, a collaborator tells you that they adde
 **Action:** Pull down a collaborator's contributions to the canonical repository. 
 
 1. First, verify that you did indeed close the previous issue.
-1. Now, visit that canonical repository on GitHub and look at the commits (go to `https://github.com/USGS-R/ds-gitflows-[username]` and click on "commits"). You should see a new commit that was not created by you. 
+1. Now, visit that canonical repository on GitHub and look at the commits (go to `https://github.com/padilla410/ds-gitflows-static-[username]` and click on "commits"). You should see a new commit that was not created by you. 
 1. Click on the commit name to see what changes were made. Looks like your collaborator added the next section of the story! 
 1. Our goal is to continue this work and add another section but first, we need to get our collaborator's changes locally. Before pulling down changes, verify that you don't have any uncommitted changes locally. Run `git status` and look for the phrase, "nothing to commit".
 1. Next, pull their changes down using `git pull upstream master`. Remember, the "canonical repository" is referred to as the "upstream" remote in git commands.
@@ -334,7 +334,7 @@ We are now ready to push our local changes (including the resolved merge conflic
 1. Just as before, we need to "push" our local changes to our remote fork. Run `git push origin master` to do so. 
 1. Go to **your fork's** webpage (`https://github.com/[username]/ds-gitflows-[username]`) and click on the `commits` button (see image below). You should see your new commit messages appear there.
 1. Now, click the "Code" tab to go back to your fork's home page. At the top, click the "New pull request button".
-1. Before your pull request is actually created, you need to verify that you are requesting the correct changes be merged with the correct repository. Remember, we are not working with branches, so don't worry about the fields that say "master". However, you should verify that the `base repository` is set to the project canonical repo (`USGS-R/ds-gitflows-[username]`) and that the `head repository` is set to your fork (`[username]/ds-gitflows-[username]`).
+1. Before your pull request is actually created, you need to verify that you are requesting the correct changes be merged with the correct repository. Remember, we are not working with branches, so don't worry about the fields that say "master". However, you should verify that the `base repository` is set to the project canonical repo (`padilla410/ds-gitflows-static-[username]`) and that the `head repository` is set to your fork (`[username]/ds-gitflows-[username]`).
 1. After verifying, click the green "Create pull request" button.
 1. Add a title to your pull request and a description about your changes. In your description, make sure to reference this issue by typing `#[issue number]`. 
 1. Once you add a title and description, click the cog next to the `Reviewers` feature on the right bar and select @lindsayplatt as the reviewer from the drop-down menu. If you do not have the option to add a reviewer, do step 9 and then add the reviewer after.
@@ -454,7 +454,7 @@ There is a lot more Git that can be learned, but the above are the basics that w
 * much more!
 
 ----
-**Action:** Once you are done reading this, close this issue and return to the canonical repo's main GitHub page `https://github.com/USGS-R/ds-gitflows-[username]`.
+**Action:** Once you are done reading this, close this issue and return to the canonical repo's main GitHub page `https://github.com/padilla410/ds-gitflows-static-[username]`.
 
 /details>
 
