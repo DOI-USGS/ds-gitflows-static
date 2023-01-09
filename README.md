@@ -4,7 +4,7 @@ This template repository contains the issues and starting content to teach the D
 
 ## I'm a learner
 
-1. Go to the repo that matches your username (`USGS-R/ds-gitflows-static-[username]`) and fork it.
+1. Go to the repo that matches your username (`padilla410/ds-gitflows-static-[username]`) and fork it.
 1. Click on `course-instructions.md` to start the course.
 
 ## I'm leading the course
