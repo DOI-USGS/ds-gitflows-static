@@ -69,7 +69,7 @@ You have now successfully cloned your fork!
 <details>
 <summary><h2>Link your clone to the canonical repo</h2></summary>
 
-We refer to online versions of GitHub repositories as "remotes". If you open Git Bash to your project directory (you may need to `cd ds-gitflows-[username]` from the end of the last issue) and run `git remote -v`, you will see a list of remotes and their URLs that are currently associated with your local copy. Currently, you have one remote - your fork of the repository - though you will see both a fetch and push option for it. It is referred to as the `origin` because your local copy *originated* from it. 
+We refer to online versions of GitHub repositories as "remotes". If you open Git Bash to your project directory (you may need to `cd ds-gitflows-static-[username]` from the end of the last section) and run `git remote -v`, you will see a list of remotes and their URLs that are currently associated with your local copy. Currently, you have one remote - your fork of the repository - though you will see both a fetch and push option for it. It is referred to as the `origin` because your local copy *originated* from it. 
 
 What we need to do now is link the canonical repository to your local copy. This closes the loop and enables you to pull down changes that collaborators have merged to the main repo into your local version. We refer to the online canonical version as the `upstream` repo and it is a `remote` because it is online.
 
@@ -84,7 +84,7 @@ What we need to do now is link the canonical repository to your local copy. This
 6. Hit enter.
 7. Now, when you run `git remote -v` you should see a list with both an `upstream` remote and an `origin` remote.
 
-You have now set up your new project for collaborative development! We are ready to start making changes. Close this issue and move on to the next one.
+You have now set up your new project for collaborative development! We are ready to start making changes. Please move onto the next section.
 
 </details>
 
@@ -108,7 +108,7 @@ We will be using the `dryville_story.md` file to illustrate changes to a reposit
 1. To make a commit, run `git commit -m "[insert your message here]"`. For this change, we will run `git commit -m "add getting-water-to-your-homes section"`. Any change that was listed under the "Changes to be committed" section when we ran `git status` will be included in this commit.
 1. Run `git status` again. We should be back to where we started. There is "nothing to commit" because we don't have any additional changes to the repository content - we already committed our only changes. However, you will also see that it says "Your branch is ahead of 'origin/master' by 1 commit". We'll talk about that later.
 
-You have now made a commit and recorded your changes with Git! Close this issue and move on to the next one.
+You have now made a commit and recorded your changes with Git! Please move on to the next section.
 
 </details>
 
@@ -129,7 +129,7 @@ Practice makes perfect - let's make a second commit to our local repo.
 1. Run `git commit -m "add dryvilles-first-water-works section"` to make a second commit.
 1. Run `git status` again. We should be back to where we started. There is "nothing to commit" because we don't have any additional changes to the repository content - we already committed our changes. However, you will now see that it says "Your branch is ahead of 'origin/master' by 2 commits". We'll talk about that next.
 
-You have now made two commits and recorded your changes with Git! Close this issue and move on to the next one.
+You have now made two commits and recorded your changes with Git! Please move on to the next section.
 
 
 </details>
@@ -151,7 +151,7 @@ At this point, we have made our file changes and are satisfied with the state of
 
 ![image](https://user-images.githubusercontent.com/13220910/81228151-2b80ca00-8fb3-11ea-9ffe-885791732755.png)
 
-You have pushed your changes up to GitHub! Close this issue and move on to the next one.
+You have pushed your changes up to GitHub! Please move on to the next section.
 
 
 </details>
@@ -174,11 +174,11 @@ For now, we will discuss how to open a pull request.
 
 2. Before your pull request is actually created, you should verify that you are requesting the correct changes be merged with the correct repository. For now, we are not working with branches, so don't worry about the fields that say "master". However, you should verify that the `base repository` is set to the project canonical repo (`padilla410/ds-gitflows-static-[username]` in this case) and that the `head repository` is set to your fork (`[username]/ds-gitflows-[username]`). You also need to verify the commits lists. It should list the two that you just created.
 3. When you have checked those things, you can click the green "Create pull request" button.
-4. You still haven't made the pull request yet - one more step. You now need to title your pull request and add a description about your changes. I believe this was discussed earlier but if you need a refresher, [here is an article about some common best practices when it comes to PRs](https://www.atlassian.com/blog/git/written-unwritten-guide-pull-requests). In your description, make sure to reference this issue by typing `#[issue number]`. 
-5. Once you add a title and description, click the cog next to the `Reviewers` feature on the right bar and select @lindsayplatt as the reviewer from the drop-down menu. If you do not have the option to add a reviewer, do step 6 and then add the reviewer after.
+4. You still haven't made the pull request yet - one more step. You now need to title your pull request and add a description about your changes. I believe this was discussed earlier but if you need a refresher, [here is an article about some common best practices when it comes to PRs](https://www.atlassian.com/blog/git/written-unwritten-guide-pull-requests).
+5. Once you add a title and description, click the cog next to the `Reviewers` feature on the right bar and select your course contact as the reviewer from the drop-down menu. If you do not have the option to add a reviewer, do step 6 and then add the reviewer after.
 6. Now you are ready - click "Create pull request"
 
-You have now successfully created a PR! Wait for your PR to be reviewed and merged. Once your PR has been merged, close this issue and move on to the next one.
+You have now successfully created a PR! Wait for your PR to be reviewed and merged. Once your PR has been merged, move on to the next section.
 
 
 </details>
@@ -201,7 +201,7 @@ Merging a PR creates a commit on the canonical repository. Even though the most 
 1. Just like we did earlier, we can push our local changes to our fork by running `git push` (or `git push origin master` to be explicit).
 1. Now when you run `git status`, you should see that everything is up-to-date and there is nothing to commit. 
 
-You have successfully closed the loop after your PR was merged! Close this issue and move to the next one.
+You have successfully closed the loop after your PR was merged! Please move on to the next section.
 
 
 </details>
@@ -216,14 +216,14 @@ Scenario: After your content was merged, a collaborator tells you that they adde
 ----
 **Action:** Pull down a collaborator's contributions to the canonical repository. 
 
-1. First, verify that you did indeed close the previous issue.
+1. First, verify that you did indeed close the loop after merging your PR (see previous section).
 1. Now, visit that canonical repository on GitHub and look at the commits (go to `https://github.com/padilla410/ds-gitflows-static-[username]` and click on "commits"). You should see a new commit that was not created by you. 
 1. Click on the commit name to see what changes were made. Looks like your collaborator added the next section of the story! 
 1. Our goal is to continue this work and add another section but first, we need to get our collaborator's changes locally. Before pulling down changes, verify that you don't have any uncommitted changes locally. Run `git status` and look for the phrase, "nothing to commit".
 1. Next, pull their changes down using `git pull upstream master`. Remember, the "canonical repository" is referred to as the "upstream" remote in git commands.
 1. Now when you open your `dryville_story.md` file locally, you should see the "Be Gone, Dirty Water" section is the last in the file. 
 
-Great! You successfully pulled down contributions that someone else on your team made to the repository. Next, we will add another section. Close this issue and move to the next one.
+Great! You successfully pulled down contributions that someone else on your team made to the repository. Next, we will add another section. Please move onto the next section.
 
 
 </details>
@@ -249,7 +249,7 @@ Time to add on to this story. We've done this a couple times now, so the edit-sa
 1. Run `git commit -m "add storing-water-for-a-rainy-day section"` to make a commit.
 1. Now `git status` shows that we are ahead of `origin/master` by 3 commits.
 
-You have now made two new commits. Close this issue and move on to the next one.
+You have now made two new commits. Please move on to the next section.
 
 
 </details>
@@ -259,17 +259,17 @@ You have now made two new commits. Close this issue and move on to the next one.
 <details>
 <summary><h2>Pull down more new changes from your collaborator</h2></summary>
 
-In the last issue, we made two commits that added two new sections of the story to our `dryville_story.md` file. Huzzah! Everything is peachy. However, while you were doing that, your collaborator also decided to add to the story and they committed before you. Now, we need to once again pull down their changes before moving on.
+In the last section, we made two commits that added two new sections of the story to our `dryville_story.md` file. Huzzah! Everything is peachy. However, while you were doing that, your collaborator also decided to add to the story and they committed before you. Now, we need to once again pull down their changes before moving on.
 
 ----
 **Action:** Pull down your collaborator's most recent additions. 
 
-1. First, verify that you did indeed close the previous issue.
+1. First, verify that you did indeed complete the previous section.
 1. Before pulling down changes, verify that you don't have any uncommitted changes locally. Run `git status` and look for the phrase, "nothing to commit".
 1. Next, pull their changes down using `git pull upstream master`. 
 1. Uh oh, there seems to be an issue. When we pulled down those changes, the message "CONFLICT (content): Merge conflict in dryville_story.md" appeared. We must have been editing the same line of the file as our collaborator.
 
-Your first merge conflict! Everything will be OK, promise :) Close this issue and move on to the next one.
+Your first merge conflict! Everything will be OK, promise :) Please move on to the next section.
 
 
 </details>
@@ -279,7 +279,7 @@ Your first merge conflict! Everything will be OK, promise :) Close this issue an
 <details>
 <summary><h2>Conquer a merge conflict!</h2></summary>
 
-In the last issue, we pulled down changes from our collaborator and realized that there was a merge conflict. This occurs when you edit the same line of code. In this case, you both added on to the last line of the file. Don't worry - merge conflicts are not as intimidating as they may seem. Let's do this!
+In the last section, we pulled down changes from our collaborator and realized that there was a merge conflict. This occurs when you edit the same line of code. In this case, you both added on to the last line of the file. Don't worry - merge conflicts are not as intimidating as they may seem. Let's do this!
 
 ----
 **Action:** Fix the merge conflict. 
@@ -313,9 +313,9 @@ You start thinking... a reservoir (you can call it a lake) above town could real
 8. Now you are left with the merge conflict symbols and the correct version of the "Storing Water for a Rainy Day" section. Delete all of the symbols related to the merge conflict (`<<<<<<< HEAD`, `=======`, and `>>>>>>> [random letters/numbers]`). Now, you should be back to where you started (which happens in merge conflict resolution sometimes).
 9. Save the file.
 10. The last step for resolving a merge confict is to commit your changes. Follow the same pattern as before. Running `git status` will show you that you have an unresolved merge conflict. Just as before, run `git add dryville_story.md` to stage your changed file. Then commit by running `git commit -m "resolve merge conflict"`. 
-11. Now, when you run `git status` you will see that you don't have any changes to commit (but your branch still ahead of origin/master - see next issue).
+11. Now, when you run `git status` you will see that you don't have any changes to commit (but your branch still ahead of origin/master - see next section).
 
-You successfully resolved a conflict! Close this issue and move on to the next one.
+You successfully resolved a conflict! Please move on to the next section.
 
 
 </details>
@@ -336,11 +336,11 @@ We are now ready to push our local changes (including the resolved merge conflic
 1. Now, click the "Code" tab to go back to your fork's home page. At the top, click the "New pull request button".
 1. Before your pull request is actually created, you need to verify that you are requesting the correct changes be merged with the correct repository. Remember, we are not working with branches, so don't worry about the fields that say "master". However, you should verify that the `base repository` is set to the project canonical repo (`padilla410/ds-gitflows-static-[username]`) and that the `head repository` is set to your fork (`[username]/ds-gitflows-[username]`).
 1. After verifying, click the green "Create pull request" button.
-1. Add a title to your pull request and a description about your changes. In your description, make sure to reference this issue by typing `#[issue number]`. 
+1. Add a title to your pull request and a description about your changes. 
 1. Once you add a title and description, click the cog next to the `Reviewers` feature on the right bar and select @lindsayplatt as the reviewer from the drop-down menu. If you do not have the option to add a reviewer, do step 9 and then add the reviewer after.
 1. Now, click "Create pull request".
 
-You have successfully made a second pull request! Wait for your PR to be reviewed and merged. Once your PR has been merged, close this issue and move on to the next one.
+You have successfully made a second pull request! Wait for your PR to be reviewed and merged. Once your PR has been merged, you can move on to the next section.
 
 
 /details>
@@ -363,7 +363,7 @@ Merging a PR creates a commit on the canonical repository. Even though the most 
 1. Just like we did earlier, we can push our local changes to our fork by running `git push` (or `git push origin master` to be explicit).
 1. Now when you run `git status`, you should see that everything is up-to-date and there is nothing to commit. 
 
-You have once again closed the loop after your PR was merged! Close this issue and move to the next one.
+You have once again closed the loop after your PR was merged! Please move on to the next section.
 
 /details>
 
@@ -389,7 +389,7 @@ git add .gitignore
 git commit -m "add downloaded image to gitignore"
 git push origin master
 ```
-8. Finally, create a pull request. Make sure to add @lindsayplatt as a reviewer of your PR and reference this issue using `#[issue number]`. Reminder - you can look back at closed issues to follow along with past instructions by clicking "Issues" and then "Closed" on the GitHub page for the canonical repository.
+8. Finally, create a pull request. Make sure to add the assigned reviewer of your PR. Reminder - you can look back at closed issues to follow along with past instructions by clicking "Issues" and then "Closed" on the GitHub page for the canonical repository.
 
 Once you open your PR, wait for it to be reviewed and merged. Once your PR has been merged, close this issue and go to the next one.
 
@@ -432,7 +432,7 @@ Welcome to the end of the hands on tutorial with Git and GitHub! You have now be
 1. Once you have changes on your fork that make it different from the canonical repository, go to your fork's GitHub page and click "New pull request". 
 1. In the next screen, verify that the `base` repository shows the canonical and the `head` repository shows your fork. 
 1. Click "Create pull request".
-1. Add a title and description. Include a peer as a reviewer and link to any related issues by adding `#[issue number]` in your description.
+1. Add a title and description. Include a peer as a reviewer.
 1. The reviewer will merge the changes.
 1. Close the loop by pulling down the changes from upstream to your local repo - `git pull upstream master`
 
@@ -454,7 +454,7 @@ There is a lot more Git that can be learned, but the above are the basics that w
 * much more!
 
 ----
-**Action:** Once you are done reading this, close this issue and return to the canonical repo's main GitHub page `https://github.com/padilla410/ds-gitflows-static-[username]`.
+**Action:** Once you are done reading this, return to the canonical repo's main GitHub page `https://github.com/padilla410/ds-gitflows-static-[username]`.
 
 /details>
 
