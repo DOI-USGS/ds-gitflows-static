@@ -389,7 +389,7 @@ git add .gitignore
 git commit -m "add downloaded image to gitignore"
 git push origin master
 ```
-8. Finally, create a pull request. Make sure to add the assigned reviewer of your PR. Reminder - you can look back at closed issues to follow along with past instructions by clicking "Issues" and then "Closed" on the GitHub page for the canonical repository.
+8. Finally, create a pull request. Make sure to add your course contact as the reviewer of your PR. Reminder - you can look back at closed issues to follow along with past instructions by clicking "Issues" and then "Closed" on the GitHub page for the canonical repository.
 
 Once you open your PR, wait for it to be reviewed and merged. Once your PR has been merged, close this issue and go to the next one.
 
@@ -432,7 +432,7 @@ Welcome to the end of the hands on tutorial with Git and GitHub! You have now be
 1. Once you have changes on your fork that make it different from the canonical repository, go to your fork's GitHub page and click "New pull request". 
 1. In the next screen, verify that the `base` repository shows the canonical and the `head` repository shows your fork. 
 1. Click "Create pull request".
-1. Add a title and description. Include a peer as a reviewer.
+1. Add a title and description. Include your course contact as a reviewer.
 1. The reviewer will merge the changes.
 1. Close the loop by pulling down the changes from upstream to your local repo - `git pull upstream master`
 
